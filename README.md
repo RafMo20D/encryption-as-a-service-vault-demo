@@ -15,8 +15,8 @@ This repository contains a simple Go-based Encryption-as-a-Service (EaaS) applic
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/RafMo20D/encryption-as-a-Service-vault.git
-cd encryption-as-a-Service-vault
+git clone https://github.com/RafMo20D/encryption-as-a-Service-vault-demo.git
+cd encryption-as-a-Service-vault-demo
 ```
 
 ### 2. Install Dependencies
