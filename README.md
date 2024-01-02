@@ -22,7 +22,6 @@ cd encryption-as-a-Service-vault
 ### 2. Install Dependencies
 
 ```bash
-go get github.com/gorilla/mux
 go get github.com/hashicorp/vault/api
 ```
 ### 3. Configure Vault
@@ -35,7 +34,7 @@ vault secrets enable transit
 . Create a named encryption key (replace my-key with your desired key name):
 
 ```bash
-vault write -f secret/data/myapp/my-key
+vault write -f transit/keys/my-key
 ```
 ### 4. Run the Go EaaS Server
 
@@ -57,7 +56,7 @@ curl -X POST -d "plaintext=HelloWorld" http://localhost:8080/encrypt
 ```
 ### Troubleshooting
 
-. If you encounter permission issues, ensure that your Vault token has the necessary policies and permissions. Create  a policy file and associate it with your token.
+If you encounter permission issues, ensure that your Vault token has the necessary policies and permissions. Create  a policy file and associate it with your token.
 
 ### Contributions
 

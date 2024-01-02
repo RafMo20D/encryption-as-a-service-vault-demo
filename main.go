@@ -21,8 +21,8 @@ type Vault struct {
 
 const (
 	vaultAddress = "http://localhost:8200"
-	vaultToken   = "hvs.CAESILr3iQbM8ROSn8UFg5Dp-qmsTsNpxIfAB4My_0X4-ewSGh4KHGh2cy5ObTQwR25MS01iQ1FBUjZCQndvaXlNUnQ"
-	secretPath   = "secret/data/myapp/"
+	vaultToken   = "VAULT_TOKEN"
+	secretPath   = "transit/keys/my-key"
 )
 
 func NewVault() (*Vault, error) {
