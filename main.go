@@ -20,9 +20,9 @@ type Vault struct {
 }
 
 const (
-	vaultAddress = "https://vault-cluster-public-vault-fd2d8042.08732e43.z1.hashicorp.cloud:8200"
-	vaultToken   = "hvs.CAESIMyoRfSmjpr9FrEhkxtIgIXDGb8SrjUYLkDoUgf8JSddGicKImh2cy5yWlFUU3NtQkgzRmt2MDhqTWpSQ01vQWkuY2R0c3cQmxY"
-	secretPath   = "secret/cubbyhole/myapp"
+	vaultAddress = "http://localhost:8200"
+	vaultToken   = "hvs.CAESILr3iQbM8ROSn8UFg5Dp-qmsTsNpxIfAB4My_0X4-ewSGh4KHGh2cy5ObTQwR25MS01iQ1FBUjZCQndvaXlNUnQ"
+	secretPath   = "secret/data/myapp/"
 )
 
 func NewVault() (*Vault, error) {
